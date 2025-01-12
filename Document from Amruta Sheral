@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "d46abfa4-bc0e-41d3-ba8a-f8414a2383cf",
+		"name": "UserServiceAdmin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40711841",
+		"_collection_link": "https://cs1111-9222.postman.co/workspace/97da3db3-062b-4484-b5eb-f377318b6eb3/collection/40711841-d46abfa4-bc0e-41d3-ba8a-f8414a2383cf?action=share&source=collection_link&creator=40711841"
+	},
+	"item": [
+		{
+			"name": "user1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 1,\r\n  \"username\": \"john\",\r\n  \"email\": \"john@gmail.com\",\r\n  \"password\": \"john@123\",\r\n  \"phone\": \"+1234567890\",\r\n  \"address\": \"A-123,MG Street, Delhi\",\r\n  \"role\": \"USER\",\r\n  \"createdAt\": \"2025-01-02T12:00:00Z\",\r\n  \"updatedAt\": \"2025-01-02T12:30:00Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9696/admin/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 2,\r\n  \"username\": \"ram\",\r\n  \"email\": \"ram@gmail.com\",\r\n  \"password\": \"ram@123\",\r\n  \"phone\": \"+1234567890\",\r\n  \"address\": \"A-123,MG Street, Mumbai\",\r\n  \"role\": \"USER\",\r\n  \"createdAt\": \"2025-01-02T12:00:00Z\",\r\n  \"updatedAt\": \"2025-01-02T12:30:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9696/admin/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 3,\r\n  \"username\": \"siya\",\r\n  \"email\": \"siya@gmail.com\",\r\n  \"password\": \"siya@123\",\r\n  \"phone\": \"+1234567890\",\r\n  \"address\": \"A-123,MG Street, Pune\",\r\n  \"role\": \"USER\",\r\n  \"createdAt\": \"2025-01-02T12:00:00Z\",\r\n  \"updatedAt\": \"2025-01-02T12:30:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9696/admin/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 4,\r\n  \"username\": \"navya\",\r\n  \"email\": \"navya@gmail.com\",\r\n  \"password\": \"navya@123\",\r\n  \"phone\": \"+1234567890\",\r\n  \"address\": \"A-123,MG Street, Banglore\",\r\n  \"role\": \"ADMIN\",\r\n  \"createdAt\": \"2025-01-02T12:00:00Z\",\r\n  \"updatedAt\": \"2025-01-02T12:30:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9696/admin/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9696/admin/allUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"allUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9696/admin/deleteUser/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"deleteUser",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 5,\r\n  \"username\": \"siya\",\r\n  \"email\": \"siya@gmail.com\",\r\n  \"password\": \"siya@123\",\r\n  \"phone\": \"+1234567890\",\r\n  \"address\": \"B-123,MG Street, Pune\",\r\n  \"role\": \"USER\",\r\n  \"createdAt\": \"2025-01-02T12:00:00Z\",\r\n  \"updatedAt\": \"2025-01-02T12:30:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9696/admin/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"admin",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
